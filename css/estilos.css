@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+
+header{
+    width: 100%;
+    height: 4em;
+    background-color: #082032;
+}
+nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    height: 4em;
+    object-fit: contain;
+}
+nav .btnAbrirBuscador{
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    color:#fff;
+    background: transparent;
+    border: 1px solid #2C394B;
+    cursor: pointer;
+}
+
+.contBuscador{
+    width: 100%;
+    min-height: 100vh;
+    background:#fff;
+    position: fixed;
+    top: 0;
+}
+
+.buscador{
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.buscador .btnRegresar{
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    color:#2C394B;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.buscador .contenedorBuscador{
+    width: 90%;
+    max-width: 1000px;
+}
+.buscador .contenedorBuscador input[type="text"]{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+}
+
+.resultados{
+    width: 80%;
+    max-width: 920px;
+    margin: 20px auto;
+}
+
+.resultados p{
+    margin:20px 0px;
+    padding:10px;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.cargando{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.parteArriba, .parteAbajo{
+    width: 100%;
+    height: 50%;
+}
+.parteArriba img , .parteAbajo img{
+    width: 50%;
+}
+.parteArriba{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.parteAbajo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contenedorPokemon{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.contenedorPokemon div img{
+    width: 60%;
+}
+.pTitulo{
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 10px 0px;
+    color:#222831;
+}
+.pDescripcion{
+    margin: 10px 0px;
+    font-size: 1.2em;
+    line-height: 30px;
+    color:#393E46;
+}
+
+.sk{
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.bicho{
+    background-color: #4CAB57;
+}
+.dragon,.siniestro,.fantasma,.tierra,.psiquico,.veneno{
+    color: #fff;
+}
+.dragon{
+    background: #232323;
+}
+.hada{
+    background: #F07AFF;
+}
+
+.fuego{
+    background: #FF2D2D;
+}
+
+.fantasma{
+    background: #6C4877;
+}
+.tierra{
+    background: #6E511C;
+}
+.normal{
+    background: #ECECEC;
+}
+.psiquico{
+    background: #9AAAFF;
+}
+.acero{
+    background: #737373;
+}
+.siniestro{
+    background: #141414;
+}
+.electrico{
+    background: #EBF000;
+}
+.lucha{
+    background: #AB4A4A;
+}
+.volador{
+    background-color: #FFF7B1;
+}
+.planta{
+    background: #4AAB60;
+}
+.hielo{
+    background: #16F4FF;
+}
+.veneno{
+    background: #6B36C8;
+}
+.roca{
+    background: #507B7E;
+}
+.agua{
+    background: #56F7FF;
+}
+.animal{
+    background: #4CCA80;
+}
+
+.contTipos{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.esconder{
+    display: none;
+}
+
+/*----------------------------------------- estilos a 1200px*/
+@media screen and (max-width:1200px){
+    nav, .buscador, .contenedorPokemon{
+        padding: 0px 20px;
+    }
+    
+}
+@media screen and (max-width:700px){
+    .resultados{
+        width: 70%;
+    }
+
+    .pTitulo{
+        font-size: 1.5em;
+    }
+    .pDescripcion{
+        font-size: 1em;
+    }
+
+    .contenedorPokemon div img{
+        width: 70%;
+    }
+}
