@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pok&eacute;mon</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <!-- PAGINA DE CARGA -->
+    <!-- <div class="cargando">
+        <div class="parteArriba">
+            <img src="img/parteArriba.png" alt="pokebola">
+        </div>
+        <div class="parteAbajo">
+            <img src="img/parteAbajo.png" alt="pokebola">
+        </div>
+    </div> -->
+
+    <!-- MENU -->
+    <header>
+        <nav>
+            <img src="./img/logoPokemon.png" alt="Logo Pokemon">
+            <button id="btnAbrirBuscador" class="btnAbrirBuscador" id="btnAbrirBuscador"><i class="fas fa-search"></i></button>
+        </nav>
+    </header>
+    <!-- BUSCADOR -->
+    <div class="contBuscador esconder" id="contBuscador">
+        <div class="buscador">
+            <button class="btnRegresar" id="btnRegresar">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="contenedorBuscador">
+                <label for="">
+                    <input type="text" placeholder="Buscar Pokemon" id="inputBuscador">
+                    <!-- <button><i class="fas fa-search"></i></button> -->
+                </label>
+            </div>
+        </div>
+        
+        <div id="resultados" class="resultados">
+            
+        </div>
+    </div>
+    <!-- MOSTRAR POKEMON -->
+    <div class="contenedorPokemon" id="contenedorPokemon">
+
+    </div>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>
