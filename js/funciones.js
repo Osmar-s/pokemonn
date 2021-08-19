@@ -4,17 +4,16 @@ const d = document, $btnAbrirBuscador = d.getElementById("btnAbrirBuscador"),
 $btnRegresarPrincipal = d.getElementById("btnRegresar"),
 $contBuscador = d.getElementById("contBuscador"),
 $inputBuscador = d.getElementById("inputBuscador"),
-nombres = [],
 $contenedorResultados = d.getElementById('resultados'),
 $contCargando = d.getElementById("cargando"),
 $contenedorPokemon = d.getElementById("contenedorPokemon");
-
+let nombres = [];
 //FUNCIONES
 
 const TraerNombres = async () => {
     const Conexion = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1118&offset=0');
     const Respuesta = await Conexion.json();
-    Respuesta.results.forEach((elemento) => nombres.push(elemento.name));
+    nombres = Respuesta.results.map((elemento) => elemento.name);
 }
 
 const MostrarResultados = (resultados) => {
